@@ -1,29 +1,30 @@
-magit-gerrit
+magit-gerrit2
 ============
 
-Magit plugin for Gerrit Code Review
+Magit plugin for Gerrit Code Review.
 
+This is a fork of [magit-gerrit](https://github.com/terranpro/magit-gerrit), patched with bug fixes.
 
 Installation
 ============
 
-If you have a recent Emacs with `package.el`, you can install `magit-gerrit`
+If you have a recent Emacs with `package.el`, you can install `magit-gerrit2`
 from [MELPA](http://melpa.milkbox.net/).
 
-Otherwise, you'll have to download `magit-gerrit.el` and ensure it is in
+Otherwise, you'll have to download `magit-gerrit2.el` and ensure it is in
 a directory in your `load-path`.
 
 Then:
 
 ```
-(require 'magit-gerrit)
+(require 'magit-gerrit2)
 
 ;; if remote url is not using the default gerrit port and
 ;; ssh scheme, need to manually set this variable
-(setq-default magit-gerrit-ssh-creds "myid@gerrithost.org")
+(setq-default magit-gerrit2-ssh-creds "myid@gerrithost.org")
 
 ;; if necessary, use an alternative remote instead of 'origin'
-(setq-default magit-gerrit-remote "gerrit")  
+(setq-default magit2-gerrit-remote "gerrit")  
 ```
 
 
@@ -41,7 +42,7 @@ Magit Gerrit Configuration
 ============
 
 For simple setups, it should be enough to set the default value for 
-`magit-gerrit-ssh-creds` and `magit-gerrit-remote` as shown above.
+`magit-gerrit2-ssh-creds` and `magit-gerrit2-remote` as shown above.
 
 For per project configurations, consider using buffer local or directory local
 variables.
@@ -51,8 +52,8 @@ variables.
 
 ```
 ((magit-mode .
-      ((magit-gerrit-ssh-creds . "dev_a@prj1.server.com")
-       (magit-gerrit-remote . "gerrit"))))
+      ((magit-gerrit2-ssh-creds . "dev_a@prj1.server.com")
+       (magit-gerrit2-remote . "gerrit"))))
 ```
 
 Author
@@ -64,6 +65,6 @@ Brian Fransioli  ( assem@terranpro.org )
 Acknowledgements
 ============
 
-Thanks for using and improving magit-gerrit!  Enjoy!
+Thanks for using and improving magit-gerrit2!  Enjoy!
 
-Please help improve magit-gerrit!  Pull requests welcomed!
+Please help improve magit-gerrit2!  Pull requests welcomed!
